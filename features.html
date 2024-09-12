@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - SonaDBA</title>
+  <title>Features - SonaDBA</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,8 +73,8 @@
       <div class="container position-relative">
         <h1>Features</h1>
         <p>Discover our powerful features designed to optimize database management. From automation to
-           secure access, explore how our solutions
-           enhance efficiency and streamline your data operations</p>
+          secure access, explore how our solutions
+          enhance efficiency and streamline your data operations</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -80,7 +82,8 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
 
 
@@ -100,7 +103,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup1">
                 <div class="card-img">
                   <img src="assets/img/1.jpeg" alt="" class="img-fluid">
                 </div>
@@ -109,25 +112,94 @@
                   performance optimization, our solution ensures efficient and uninterrupted database performance.</p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1Label1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup1Label1">Automated Database Management</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/1.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Automated Database Management streamlines database operations through advanced
+                      management tools that automate routine tasks. This includes performing regular maintenance,
+                      optimizing performance, and managing updates without manual intervention. By automating these
+                      processes, the solution reduces the risk of human error, enhances operational efficiency, and
+                      ensures that databases run smoothly with minimal downtime.</p>
+
+                    <ul>
+                      <li> <span>Reduces risk of human error and minimizes downtime.</span> </li>
+                      <li><span> Enhances operational efficiency through automated updates
+                          and maintenance. </span></li>
+                      <li><span>Facilitates proactive performance monitoring and quick issue
+                          resolution. </span></li>
+                      <li><span>Designed to manage complex database environments and handle
+                          large volumes of data effectively. </span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup2">
                 <div class="card-img">
                   <img src="assets/img/2.jpg" alt="" class="img-fluid">
                 </div>
-                <h3>Secure Access Controls
-              </a></h3>
-              <p>Protect your data with advanced, role-based access controls. Our system employs robust authentication
-                and authorization measures to secure your databases from unauthorized access.</p>
+                <h3>Secure Access Controls</h3>
+                <p>Protect your data with advanced, role-based access controls. Our system employs robust authentication
+                  and authorization measures to secure your databases from unauthorized access.</p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 2 -->
+          <div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup2Label">Secure Access Controls</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/2.jpg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Secure Access Controls protect your data with advanced, role-based access management.
+                      This feature ensures robust authentication and authorization measures, safeguarding databases from
+                      unauthorized access. By implementing these controls, you can maintain high security standards,
+                      manage user permissions efficiently, and ensure that sensitive data remains protected against
+                      potential breaches.</p>
+
+                    <ul>
+                      <li><span>Ensures robust authentication and authorization to secure databases.</span></li>
+                      <li><span>Provides role-based access management to control user permissions.</span></li>
+                      <li><span>Protects sensitive data from unauthorized access and potential breaches.</span></li>
+                      <li><span>Facilitates efficient management of user access and security protocols.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup3">
                 <div class="card-img">
                   <img src="assets/img/3.jpeg" alt="" class="img-fluid">
                 </div>
@@ -137,25 +209,92 @@
                 </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 3 -->
+          <div class="modal fade" id="popup3" tabindex="-1" aria-labelledby="popup3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup3Label">Scheduled Backups & Restorations</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/3.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Scheduled Backups & Restorations ensure your data is protected through automated,
+                      regular backups and a simplified restoration process. This feature allows for consistent data
+                      preservation, making it easy to recover your information in case of data loss or system failure.
+                      By automating backups and streamlining restorations, you minimize the risk of data loss and ensure
+                      that your critical information is always recoverable.</p>
+
+                    <ul>
+                      <li><span>Automated backups to protect your data regularly.</span></li>
+                      <li><span>Streamlined restoration process for easy data recovery.</span></li>
+                      <li><span>Minimizes risk of data loss and ensures recoverability.</span></li>
+                      <li><span>Consistent data preservation with minimal manual intervention.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup4">
                 <div class="card-img">
                   <img src="assets/img/4.jpeg" alt="" class="img-fluid">
                 </div>
                 <h3>Multi-Database Query Handling</h3>
                 <p>Manage and execute queries across multiple databases with ease. Our platform supports
-                   efficient query processing in complex and distributed environments.
+                  efficient query processing in complex and distributed environments.
                 </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 4 -->
+          <div class="modal fade" id="popup4" tabindex="-1" aria-labelledby="popup4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup4Label">Multi-Database Query Handling</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/4.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Multi-Database Query Handling enables efficient management and execution of queries
+                      across multiple databases. This feature supports complex query processing in distributed
+                      environments, allowing for seamless integration and operation across various data sources. It
+                      enhances query efficiency, reduces the complexity of managing different databases, and improves
+                      overall performance in data handling and analysis.</p>
+
+                    <ul>
+                      <li><span>Efficient query processing across multiple databases.</span></li>
+                      <li><span>Seamless integration and operation in distributed environments.</span></li>
+                      <li><span>Reduces complexity of managing different databases.</span></li>
+                      <li><span>Improves performance in data handling and analysis.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup5">
                 <div class="card-img">
                   <img src="assets/img/5.jpeg" alt="" class="img-fluid">
                 </div>
@@ -164,11 +303,46 @@
                   critical queries are reviewed and approved before execution. </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 5 -->
+          <div class="modal fade" id="popup5" tabindex="-1" aria-labelledby="popup5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup5Label">Query Approval Workflow</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/5.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">The Query Approval Workflow establishes a structured process for reviewing and
+                      approving critical queries to ensure data integrity and security. This feature requires that all
+                      significant queries undergo a formal approval process before execution, minimizing the risk of
+                      unauthorized or erroneous changes to the database. By implementing this workflow, organizations
+                      can maintain stringent control over their data operations and safeguard against potential security
+                      breaches and data inconsistencies.</p>
+
+                    <ul>
+                      <li><span>Structured process for reviewing and approving queries.</span></li>
+                      <li><span>Enhances data integrity and security through formal approvals.</span></li>
+                      <li><span>Minimizes risk of unauthorized or erroneous changes.</span></li>
+                      <li><span>Maintains stringent control over data operations.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup6">
                 <div class="card-img">
                   <img src="assets/img/6.jpeg" alt="" class="img-fluid">
                 </div>
@@ -178,11 +352,47 @@
                 </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+
+          <!-- Modal for Feature 6 -->
+          <div class="modal fade" id="popup6" tabindex="-1" aria-labelledby="popup6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup6Label">Task Automation</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/6.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Task Automation enhances efficiency by automating routine database tasks, such as
+                      maintenance, reporting, and other repetitive functions. This feature minimizes manual workload,
+                      reduces the risk of human error, and ensures consistency in task execution. By automating these
+                      processes, users can focus on more strategic activities while maintaining smooth and reliable
+                      database operations. Task Automation also helps in achieving faster response times and improved
+                      operational productivity.</p>
+
+                    <ul>
+                      <li><span>Automates routine database tasks to enhance efficiency.</span></li>
+                      <li><span>Reduces manual workload and risk of human error.</span></li>
+                      <li><span>Ensures consistency and reliability in task execution.</span></li>
+                      <li><span>Frees up time for more strategic activities and improves productivity.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup7">
                 <div class="card-img">
                   <img src="assets/img/7.jpeg" alt="" class="img-fluid">
                 </div>
@@ -192,11 +402,46 @@
                 </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 7 -->
+          <div class="modal fade" id="popup7" tabindex="-1" aria-labelledby="popup7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup7Label">Comprehensive Collaboration Tools</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/7.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Comprehensive Collaboration Tools enhance teamwork by providing integrated features
+                      for real-time sharing and coordination on database projects and tasks. These tools enable users to
+                      collaborate effectively, share insights, and track project progress seamlessly. By fostering
+                      collaboration, teams can work together more efficiently, improve communication, and ensure that
+                      all members are aligned with project goals and updates. This feature supports a more cohesive and
+                      productive work environment.</p>
+
+                    <ul>
+                      <li><span>Facilitates real-time sharing and coordination on database tasks.</span></li>
+                      <li><span>Enhances teamwork and communication among team members.</span></li>
+                      <li><span>Supports effective project management and progress tracking.</span></li>
+                      <li><span>Promotes a cohesive and productive work environment.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup8">
                 <div class="card-img">
                   <img src="assets/img/8.jpeg" alt="" class="img-fluid">
                 </div>
@@ -206,11 +451,45 @@
                 </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 8 -->
+          <div class="modal fade" id="popup8" tabindex="-1" aria-labelledby="popup8Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup8Label">Advanced Software Bug Tracking</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/8.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Advanced Software Bug Tracking enables efficient identification, tracking, and
+                      resolution of software issues. This system ensures the stability and reliability of your database
+                      applications by providing tools to monitor, report, and address bugs promptly. By integrating
+                      robust tracking mechanisms, it helps in minimizing disruptions and enhancing overall application
+                      performance, leading to a more stable and reliable software environment.</p>
+
+                    <ul>
+                      <li><span>Efficient identification and tracking of software issues.</span></li>
+                      <li><span>Provides tools for swift bug resolution and reporting.</span></li>
+                      <li><span>Ensures stability and reliability of database applications.</span></li>
+                      <li><span>Enhances overall software performance and reduces disruptions.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup9">
                 <div class="card-img">
                   <img src="assets/img/9.jpeg" alt="" class="img-fluid">
                 </div>
@@ -219,11 +498,45 @@
                   interactions between your databases and other applications. </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 9 -->
+          <div class="modal fade" id="popup9" tabindex="-1" aria-labelledby="popup9Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup9Label">Custom API Builder</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/9.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">The Custom API Builder allows you to design and manage APIs easily, providing a
+                      user-friendly interface for creating integrations between your databases and other applications.
+                      This tool simplifies the process of connecting various systems, ensuring seamless interactions and
+                      data flow. Whether you need to integrate with third-party services or develop custom solutions,
+                      the API Builder offers flexibility and control over your API development process.</p>
+
+                    <ul>
+                      <li><span>User-friendly interface for designing APIs.</span></li>
+                      <li><span>Seamless integration with various applications.</span></li>
+                      <li><span>Flexible and customizable API management.</span></li>
+                      <li><span>Ensures smooth data flow between systems.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup10">
                 <div class="card-img">
                   <img src="assets/img/10.jpeg" alt="" class="img-fluid">
                 </div>
@@ -233,27 +546,95 @@
                   organized handling of user queries and technical problems.</p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 10 -->
+          <div class="modal fade" id="popup10" tabindex="-1" aria-labelledby="popup10Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup10Label">Efficient Ticketing System</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/10.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Our Efficient Ticketing System streamlines support and issue resolution by organizing
+                      and managing user queries and technical problems. It ensures timely responses and efficient
+                      handling of tickets, helping to enhance customer satisfaction and maintain smooth operations. With
+                      features designed to track and prioritize issues, this system supports effective communication
+                      between users and support teams, facilitating quicker problem resolution and improved service
+                      delivery.</p>
+
+                    <ul>
+                      <li><span>Organizes and manages user queries and technical problems.</span></li>
+                      <li><span>Ensures timely responses to support requests.</span></li>
+                      <li><span>Tracks and prioritizes issues for effective resolution.</span></li>
+                      <li><span>Enhances communication between users and support teams.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Card Item -->
 
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1100">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup11">
                 <div class="card-img">
                   <img src="assets/img/11.jpeg" alt="" class="img-fluid">
                 </div>
                 <h3>Cloud Platform Integration</h3>
-                <p>Effortlessly connect and manage databases across leading cloud providers, including AWS, Azure,
-                  Rackspace, and Heroku. Our solution ensures seamless database operations in the cloud, providing
-                  scalability and performance optimization.
-                </p>
+                <p>Connect and manage databases across cloud providers like AWS, Azure, Rackspace and Heroku. With
+                  Docker support, enjoy scalable,
+                  portable deployments for seamless cloud operations.</p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+
+          <!-- Modal for Feature 11 -->
+          <div class="modal fade" id="popup11" tabindex="-1" aria-labelledby="popup11Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup11Label">Cloud Platform Integration</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/11.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">Cloud Platform Integration provides a unified solution for managing databases across
+                      multiple cloud providers, including AWS, Azure, Rackspace, and Heroku. This feature supports
+                      Docker, enabling scalable and portable deployments that enhance cloud operations. By integrating
+                      with various cloud platforms, you can achieve seamless data management and optimize your cloud
+                      resources for improved performance and flexibility.</p>
+
+                    <ul>
+                      <li><span>Connect and manage databases across major cloud providers.</span></li>
+                      <li><span>Docker support for scalable and portable deployments.</span></li>
+                      <li><span>Optimizes cloud resources for improved performance.</span></li>
+                      <li><span>Ensures seamless operations across diverse cloud environments.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1200">
             <div class="card">
-              <a href="services.html">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#popup12">
                 <div class="card-img">
                   <img src="assets/img/12.jpeg" alt="" class="img-fluid">
                 </div>
@@ -264,7 +645,40 @@
                 </p>
               </a>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+
+          <!-- Modal for Feature 12 -->
+          <div class="modal fade" id="popup12" tabindex="-1" aria-labelledby="popup12Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title justify-content-center" id="popup12Label">On-Premises Database Management</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-image">
+                    <img src="assets/img/12.jpeg" alt="" class="img-fluid pt-3">
+                  </div>
+                  <div class="modal-details">
+                    <p class="p-3">On-Premises Database Management offers comprehensive control and flexibility for
+                      managing your local database infrastructure. This solution integrates seamlessly with your
+                      existing infrastructure, allowing you to maintain stringent security, compliance, and customized
+                      configurations tailored to your specific needs. It provides robust management capabilities while
+                      ensuring your data remains secure and compliant with your organizational standards.</p>
+
+                    <ul>
+                      <li><span>Provides full control and flexibility for local database management.</span></li>
+                      <li><span>Seamlessly integrates with existing infrastructure.</span></li>
+                      <li><span>Ensures security and compliance with organizational standards.</span></li>
+                      <li><span>Supports customized database configurations tailored to specific needs.</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Card Item -->
 
 
         </div>
@@ -273,119 +687,6 @@
     <!-- /Features Section -->
 
 
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testi.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
@@ -477,7 +778,7 @@
             <span class="sitename">SONA DBA</span>
           </a>
           <p>We offer cutting-edge database management solutions, ensuring secure access,
-             automated tasks, and reliable data handling to meet your business needs with efficiency and precision.</p>
+            automated tasks, and reliable data handling to meet your business needs with efficiency and precision.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -527,7 +828,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -542,6 +844,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
 
 </body>
 
