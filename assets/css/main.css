@@ -981,15 +981,16 @@ section,
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
+  margin-bottom: -5px;
 }
 
 .hero .stats-item span:after {
-  content: "";
-  position: absolute;
-  display: block;
+  content: "+";
+  position: relative;
+  display: inline-block;
   width: 20px;
   height: 3px;
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   left: 0;
   right: 0;
   bottom: 0;
@@ -1002,6 +1003,7 @@ section,
   font-family: var(--heading-font);
   font-size: 15px;
   font-weight: 600;
+  margin-top: -5px;
 }
 
 /*--------------------------------------------------------------
@@ -1616,15 +1618,16 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  margin-bottom: -5px;
 }
 
 .stats .stats-item span:after {
-  content: "";
-  position: absolute;
-  display: block;
+  content: "+";
+  position: relative;
+  display: inline-block;
   width: 25px;
   height: 3px;
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
   left: 0;
   right: 0;
   bottom: 0;
@@ -1637,6 +1640,7 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-weight: 500;
+  margin-top: -5px;
 }
 
 /*--------------------------------------------------------------
