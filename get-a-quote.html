@@ -94,7 +94,7 @@
           <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/quote-bg.jpg);"></div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-            <form id="quoteForm" action="forms/get-a-quote.php" method="post" class="php-email-form" onsubmit="return handleSubmit(event)">
+            <form id="quoteForm" action="forms/submit-quote.php" method="post" class="php-email-form" onsubmit="return handleSubmit(event)">
               <h3>Get a quote</h3>
               <p>Request a personalized quote today and discover how SONA DBA can transform your database management experience.</p>
           
@@ -120,11 +120,12 @@
                   </div>
           
                   <div class="col-12 text-center">
-                    <div class="sent-message" id="success-message" style="display: none; background-color: white; color: green; border: 1px solid green; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">Your quote request has been sent successfully. Thank you!</div>
-                    <button type="submit" class="btn btn-primary">Get a quote</button>
+                      <div class="sent-message" id="success-message" style="display: none; background-color: white; color: green; border: 1px solid green; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">Your quote request has been sent successfully. Thank you!</div>
+                      <button type="submit" class="btn btn-primary">Get a quote</button>
                   </div>
               </div>
           </form>
+          
           
           </div><!-- End Quote Form -->
 
@@ -203,6 +204,31 @@
   <div id="preloader"></div>
 
   <script>
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent form from submitting traditionally
+
+    let formData = new FormData(document.getElementById('quoteForm'));
+
+    fetch('submit-quote.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Show success message and reset form
+        document.getElementById('success-message').style.display = 'block';
+        document.getElementById('quoteForm').reset();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+    });
+}
+  </script>
+
+
+
+  <!-- <script>
     function handleSubmit(event) {
         event.preventDefault(); // Prevent the default form submission
 
@@ -234,7 +260,7 @@
         }
         return false; // Prevent form submission
     }
-</script>
+</script> -->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
