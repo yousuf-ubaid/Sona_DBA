@@ -238,7 +238,7 @@
   
       let formData = new FormData(document.getElementById('contactForm'));
   
-      fetch('submit-quote.php', {
+      fetch('submit-contact.php', {
           method: 'POST',
           body: formData
       })
@@ -246,11 +246,11 @@
       .then(data => {
           // Show success message and reset form
           document.getElementById('success-message').style.display = 'block';
-          document.getElementById('quoteForm').reset();
+          document.getElementById('contactForm').reset();
       })
       .catch(error => {
-          console.error('Error:', error);
-          alert('An error occurred. Please try again.');
+          // console.error('Error:', error);
+          // alert('An error occurred. Please try again.');
       });
   }
     </script>
