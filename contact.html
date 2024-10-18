@@ -126,7 +126,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/submit-contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit="return handleSubmit(event)">
+            <form id="contactForm" action="forms/submit-contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit="return handleSubmit(event)">
               <div class="row gy-4">
           
                   <div class="col-md-6">
@@ -236,7 +236,7 @@
     function handleSubmit(event) {
       event.preventDefault(); // Prevent form from submitting traditionally
   
-      let formData = new FormData(document.getElementById('quoteForm'));
+      let formData = new FormData(document.getElementById('ContactForm'));
   
       fetch('submit-quote.php', {
           method: 'POST',
