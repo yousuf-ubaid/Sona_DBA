@@ -236,7 +236,7 @@
     function handleSubmit(event) {
       event.preventDefault(); // Prevent form from submitting traditionally
   
-      let formData = new FormData(document.getElementById('ContactForm'));
+      let formData = new FormData(document.getElementById('contactForm'));
   
       fetch('submit-quote.php', {
           method: 'POST',
