@@ -147,6 +147,7 @@
           
                   <div class="col-md-12 text-center">
                       <div class="loading" style="display:none;">Loading</div>
+                      <div class="error-message" style="display:none;"></div>
                       <!-- <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div> -->
                       <div class="sent-message" style="display: none; background-color: white; color: green; border: 1px solid green; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">Your message has been sent. Thank you!</div>
 
@@ -233,22 +234,25 @@
 
   <script>
     function handleSubmit(event) {
-        event.preventDefault(); // Prevent form from submitting traditionally
-
-        let formData = new FormData(document.getElementById('contactForm'));
-
-        fetch('submit-contact.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            // Show success message and reset form
-            document.getElementById('success-message').style.display = 'block';
-            document.getElementById('contactForm').reset();
-        });
-    }
-</script>
+      event.preventDefault(); // Prevent form from submitting traditionally
+  
+      let formData = new FormData(document.getElementById('contactForm'));
+  
+      fetch('submit-contact.php', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+          // Show success message and reset form
+          document.getElementById('success-message').style.display = 'block';
+          document.getElementById('contactForm').reset();
+      })
+      .catch(error => {
+      });
+  }
+    </script>
+  
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
