@@ -146,10 +146,10 @@
                   </div>
           
                   <div class="col-md-12 text-center">
-                      <div class="loading" style="display:none;">Loading</div>
-                      <div class="error-message" style="display:none;"></div>
+                      <!-- <div class="loading" style="display:none;">Loading</div>
+                      <div class="error-message" style="display:none;"></div> -->
                       <!-- <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div> -->
-                      <div class="sent-message" style="display: none; background-color: white; color: green; border: 1px solid green; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">Your message has been sent. Thank you!</div>
+                      <div class="sent-message" id="success-message" style="display: none; background-color: white; color: green; border: 1px solid green; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">Your message has been sent. Thank you!</div>
 
                       <button type="submit">Send Message</button>
                   </div>
@@ -248,8 +248,6 @@
           document.getElementById('success-message').style.display = 'block';
           document.getElementById('contactForm').reset();
       })
-      .catch(error => {
-      });
   }
     </script>
   
