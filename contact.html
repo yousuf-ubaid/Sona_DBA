@@ -234,27 +234,23 @@
 
   <script>
     function handleSubmit(event) {
-      event.preventDefault(); // Prevent form from submitting traditionally
-  
-      let formData = new FormData(document.getElementById('contactForm'));
-  
-      fetch('submit-contact.php', {
-          method: 'POST',
-          body: formData
-      })
-      .then(response => response.text())
-      .then(data => {
-          // Show success message and reset form
-          document.getElementById('success-message').style.display = 'block';
-          document.getElementById('contactForm').reset();
-      })
-      .catch(error => {
-          // console.error('Error:', error);
-          // alert('An error occurred. Please try again.');
-      });
-  }
-    </script>
-  
+        event.preventDefault(); // Prevent form from submitting traditionally
+
+        let formData = new FormData(document.getElementById('contactForm'));
+
+        fetch('submit-contact.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Show success message and reset form
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('contactForm').reset();
+        });
+    }
+</script>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
